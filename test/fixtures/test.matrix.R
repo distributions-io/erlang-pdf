@@ -2,9 +2,9 @@ options( digits = 16 )
 library( jsonlite )
 
 k = 1
-lambda = 1
+lambda = 1.7
 x = 0:24
-y = dgamma( x, k,lambda )
+y = dgamma( x, k, lambda )
 
 cat( y, sep = ",\n" )
 

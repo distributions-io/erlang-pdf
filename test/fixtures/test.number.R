@@ -3,9 +3,9 @@ library( jsonlite )
 
 
 k = 1
-lambda = 1
+lambda = 0.8
 x = c( -5, -2.5, 0, 2.5, 5 )
-y = dgamma( x, k,lambda )
+y = dgamma( x, k, lambda )
 
 cat( y, sep = ",\n" )
 

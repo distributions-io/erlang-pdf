@@ -170,7 +170,7 @@ describe( 'distributions-erlang-pdf', function tests() {
 
 		for ( i = 0; i < actual.length; i++ ) {
 			if ( isFiniteNumber( actual[ i ] ) && isFiniteNumber( expected[ i ] ) ) {
-				assert.closeTo( actual[ i ], expected[ i ], 1e-15 );
+				assert.closeTo( actual[ i ], expected[ i ], 1e-14 );
 			}
 		}
 		// Mutate...
@@ -183,7 +183,7 @@ describe( 'distributions-erlang-pdf', function tests() {
 
 		for ( i = 0; i < data.length; i++ ) {
 			if ( isFiniteNumber( data[ i ] ) && isFiniteNumber( expected[ i ] ) ) {
-				assert.closeTo( data[ i ], expected[ i ], 1e-15 );
+				assert.closeTo( data[ i ], expected[ i ], 1e-14 );
 			}
 		}
 	});
